@@ -36,8 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   #firebase
-  firebase_core: ^1.14.0
-  firebase_auth: ^3.3.12
+  firebase_core: ^3.7.0
+  cloud_firestore: ^5.4.5  # Ensure the version is compatible with firebase_core ^1.24.0
+  firebase_auth: ^5.3.2    # Use the latest compatible version of firebase_auth
+  firebase_storage: ^12.3.5
 
 dev_dependencies:
   flutter_test:
@@ -48,7 +50,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^1.0.0
+  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

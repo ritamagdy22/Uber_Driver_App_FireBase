@@ -14,7 +14,6 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
-
   TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
@@ -24,77 +23,89 @@ class _RegisterScreenState extends State<RegisterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        // to let scrolling having bounce ( animation )
         physics: const BouncingScrollPhysics(),
         child: Padding(
           padding: const EdgeInsets.all(outerPadding),
           child: Form(
             child: Column(
               children: [
-                const SizedBox(height: 60,),
+                const SizedBox(
+                  height: 60,
+                ),
                 appLogo,
-                const SizedBox(height: 25,),
-
-                const Text("Register as Driver" , style: TextStyle(color: Colors.grey,fontSize: 24),),
-
+                const SizedBox(
+                  height: 25,
+                ),
+                const Text(
+                  "Register as Driver",
+                  style: TextStyle(color: Colors.grey, fontSize: 24),
+                ),
                 CustomTextFormFieldWidget(
                   controller: nameController,
-                  hintText: "Your Name" ,
+                  hintText: "Your Name",
                   obscureText: false,
                   keyboardType: TextInputType.text,
                 ),
-
-                const SizedBox(height: 12,),
+                const SizedBox(
+                  height: 12,
+                ),
                 CustomTextFormFieldWidget(
                   controller: emailController,
-                  hintText: "Your Email" ,
+                  hintText: "Your Email",
                   obscureText: false,
                   keyboardType: TextInputType.emailAddress,
                 ),
-
-                const SizedBox(height: 12,),
-
+                const SizedBox(
+                  height: 12,
+                ),
                 CustomTextFormFieldWidget(
                   controller: passwordController,
-                  hintText: "Your Password" ,
+                  hintText: "Your Password",
                   obscureText: true,
                   keyboardType: TextInputType.text,
                 ),
-
-                const SizedBox(height: 12,),
-
+                const SizedBox(
+                  height: 12,
+                ),
                 CustomTextFormFieldWidget(
                   controller: passwordController,
-                  hintText: "Your Phone" ,
+                  hintText: "Your Phone",
                   obscureText: false,
                   keyboardType: TextInputType.phone,
                 ),
-
-                const SizedBox(height: 24,),
+                const SizedBox(
+                  height: 24,
+                ),
                 Container(
                   width: double.infinity,
                   child: ElevatedButton(
-                      onPressed: (){
-                        AppHelper.navigateToScreen(context, const CarDetailScreen());
-                        //Navigator.of(context).push(MaterialPageRoute(builder: (_) => const CarDetailScreen()));
-                      },
-                    style:  ElevatedButton.styleFrom(
-                     primary: Colors.amber
+                    onPressed: () {
+                      AppHelper.navigateToScreen(
+                          context, const CarDetailScreen());
+                      //Navigator.of(context).push(MaterialPageRoute(builder: (_) => const CarDetailScreen()));
+                    },
+                    style: ElevatedButton.styleFrom(
+                        // primary: Colors.amber
+                        ),
+                    child: const Text(
+                      "Register Driver",
+                      style: TextStyle(color: Colors.grey),
                     ),
-                      child: const Text("Register Driver" , style: TextStyle(
-                        color: Colors.grey
-                      ),),
                   ),
                 ),
-
-                const SizedBox(height: 12,),
-
+                const SizedBox(
+                  height: 12,
+                ),
                 TextButton(
-                  onPressed: (){
+                  onPressed: () {
                     AppHelper.navigateToScreen(context, const LoginScreen());
                     //Navigator.of(context).push(MaterialPageRoute(builder: (_) => const LoginScreen()));
                   },
-                  child: const Text("have an account please login" ,
-                    style: TextStyle(color: Colors.grey),),
+                  child: const Text(
+                    "have an account please login",
+                    style: TextStyle(color: Colors.grey),
+                  ),
                 ),
               ],
             ),

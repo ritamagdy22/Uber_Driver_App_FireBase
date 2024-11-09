@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     AppHelper.navigateToScreen(context, const MainScreen());
                   },
                   style:  ElevatedButton.styleFrom(
-                      primary: Colors.amber
+                    //  primary: Colors.amber
                   ),
                   child: const Text("Register Driver" , style: TextStyle(
                       color: Colors.grey

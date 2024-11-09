@@ -14,8 +14,8 @@ class AppSplashScreen extends StatefulWidget {
 class _AppSplashScreenState extends State<AppSplashScreen> {
 
   startSplashTimer() async{
-    Timer(const Duration( seconds: 4) , ()=> {
-      Navigator.of(context).push(MaterialPageRoute(builder: (_) => const MainScreen()))
+    Timer(const Duration( seconds: 4) , (){
+      Navigator.of(context).push(MaterialPageRoute(builder: (_) => const MainScreen()));
     });
   }
 
@@ -23,7 +23,10 @@ class _AppSplashScreenState extends State<AppSplashScreen> {
   @override
   void initState() {
     super.initState();
-    startSplashTimer();
+    startSplashTimer(
+
+      
+    );
   }
 
 

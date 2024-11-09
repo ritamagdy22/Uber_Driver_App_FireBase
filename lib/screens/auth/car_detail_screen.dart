@@ -98,7 +98,7 @@ class _CarDetailScreenState extends State<CarDetailScreen> {
                     onPressed: (){
                     },
                     style:  ElevatedButton.styleFrom(
-                        primary: Colors.amber
+                       // primary: Colors.amber
                     ),
                     child: const Text("Save Car Details" , style: TextStyle(
                         color: Colors.grey
