@@ -1,16 +1,19 @@
-# drivers_app
 
-flutter uber clone drivers app
+Uber Driver App Details :
 
-## Getting Started
+1-BLoC for state management :
+ I’ve used the BLoC pattern to manage the state of the app in a clean and scalable way.
+ 
+2-Reusable Components :
+ Created reusable components for various UI elements, improving code maintainability and scalability.
+ 
+3-Firebase for Authentication for login and registeration :
+ for Authentication: Integrated Firebase for login and registration functionality, allowing users to sign in or create an account easily
+ 
+4-Theming :
+ Implemented a custom theming system to provide a consistent and dynamic look across the app.
+ 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![1](https://github.com/user-attachments/assets/262c6b84-da91-4bc0-b21e-0ab858b0b14a)
+![2](https://github.com/user-attachments/assets/efcc1bbd-acda-4925-b16e-5a789d087a01)
+![3](https://github.com/user-attachments/assets/cc2e00de-00ba-4dec-9ff8-350f5db14e5d)
