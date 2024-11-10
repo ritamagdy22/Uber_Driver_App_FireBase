@@ -27,8 +27,8 @@ class DriversApp extends StatelessWidget {
     return MaterialApp(
       title: "Drivers App",
       debugShowCheckedModeBanner: false,
-      theme: lightTheme,
-      themeMode: ThemeMode.light,
+      theme: darkTheme,
+      themeMode: ThemeMode.dark,
       home: RegisterScreen(),
     );
   }
